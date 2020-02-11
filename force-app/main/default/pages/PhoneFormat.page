@@ -1,0 +1,17 @@
+<apex:page >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<apex:stylesheet value="/resource/1569394838000/democss"/>
+<apex:stylesheet value="/resource/1569394817000/intlTelInputcss"/>
+
+<apex:includeScript value="{!$Resource.intlTelInputjs}"/>
+<input type="tel" id="phone" value="0810115487"></input>
+
+<script>
+    //jQuery.noConflict();    
+    $(document).ready(function() {
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input,{utilsScript: "/resource/1569398163000/utils"});
+    
+  });
+</script>
+</apex:page>

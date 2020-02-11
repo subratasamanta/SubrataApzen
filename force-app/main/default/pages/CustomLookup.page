@@ -1,0 +1,39 @@
+<apex:page tabstyle="Account">
+<script>
+    var newWin=null;
+    function openLookupPopup(name, id)
+    {
+        var url="/apex/YourcustomLookuppage?namefield=" + name + "&idfield=" + id;
+        newWin=window.open(url, 'Popup','height=500,width=600,left=100,top=100,resizable=no,scrollbars=yes,toolbar=no,status=no');
+        if (window.focus) 
+        {
+            newWin.focus();
+        }
+            
+        return false;
+    }
+    function closeLookupPopup()
+ {
+    if (null!=newWin)
+    {
+       newWin.close();
+    }  
+ }  
+</script>                  
+  <apex:form >
+    <apex:pageBlock title="Lookup">
+      <apex:pageBlockSection columns="1">
+        <apex:pageBlockSectionitem >
+          <apex:outputLabel value="Account"/>
+          <apex:outputPanel >
+            <apex:inputHidden id="targetId" />
+            <apex:inputText size="40"  id="targetName" onFocus="this.blur()" disabled="false"/>
+            <img src="/s.gif" onclick="openLookupPopup('{!$Component.targetName}', '{!$Component.targetId}'); return false" class="lookupIcon" onmouseout="this.className='lookupIcon';" alt="Account Name Lookup (New Window)" onmouseover="this.className='lookupIconOn';"/>           
+          </apex:outputPanel>
+        </apex:pageBlockSectionitem>
+      </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+  </apex:form>  
+ 
+</apex:page>

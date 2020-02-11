@@ -1,0 +1,9 @@
+<apex:page controller="validateConnectedApp">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:commandButton action="{!invokeMyConnectApp}" value="Connect"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>  
+</apex:page>

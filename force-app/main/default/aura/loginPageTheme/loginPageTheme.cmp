@@ -1,0 +1,71 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="This is used for Portal Physician. For rendering the Home page.">
+    <aura:attribute name="search" type="Aura.Component[]" required="false"/>
+   
+    <aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="newHeader" type="Aura.Component[]" required="false"/>
+    
+   <style>
+        .page-container1 {
+        	background-image: url({!$Resource.loginPageBkImage});
+    		min-height: 100%;
+            background-size: 100% 100%;
+        }  
+        .loginFormSec{
+        	    position: relative;
+        }
+	</style>
+   
+   
+    <ltng:require styles="{!join(',', $Resource.styleNonBS, $Resource.styleResponsive )}"/>
+    
+    <div class="page-container1">
+        
+        <!-- main content starts -->    
+        <!--<div class="text-container">-->
+        <section>
+        	<div aura:id="sample">
+                <!-- Banner starts 
+               {!v.newHeader}-->
+                <!--<c:ABVANZBanner />-->
+                <!-- Banner ends -->
+              
+                
+                <div class="slds-container--fluid custom_gap">
+                    <div class="slds-medium-size--1-of-12 slds-large-size--2-of-12"></div>
+                    <div class="slds-small-size--1-of-1 slds-medium-size--10-of-12 slds-large-size--10-of-12 slds-container--center">                        
+                        	{!v.body}                         
+                        
+                    </div>
+
+                </div>
+                <div class="slds-container--fluid slds-grid loginFormSec">
+                	<div class="slds-medium-size--1-of-12 slds-large-size--1-of-12">
+                    	
+                    </div>
+                	<div class="slds-small-size--12-of-12 slds-medium-size--10-of-12 slds-large-size--4-of-12 overrideWidth">
+                    	{!v.newHeader}
+                    </div>
+                    <div class="slds-medium-size--1-of-12 slds-large-size--7-of-12">
+                    </div>
+                </div>
+                     
+            </div>
+       
+        </section>        
+        <!-- main content ends -->
+        
+        <div class="footerSeperatorHome"></div>
+        
+        <!-- footer starts-->
+        <footer class="homeFooter1">            
+            <div class="slds-container--fluid">
+                <div class="slds-grid footer-mid"> 
+                   
+                </div>
+            </div>            
+                    
+        </footer>
+        <!--</div>-->
+    </div>
+</aura:component>

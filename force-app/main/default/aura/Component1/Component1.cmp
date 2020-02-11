@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+   <!--<aura:attribute name="Result" type="String"/>-->
+   <aura:registerEvent name="navigate" type="c:NavigateToC2"/>
+ 
+      <ui:inputText aura:id="n1" maxlength="5" size="5" label="Number1" required="true"/>
+      <ui:inputText aura:id="n2" maxlength="5" size="5" label="Number2" required="true"/>
+      <ui:button label="Sum" press="{!c.Calculate}"/>
+</aura:component>

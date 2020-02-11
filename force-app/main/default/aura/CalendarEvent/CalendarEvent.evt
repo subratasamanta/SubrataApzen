@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Event template">
+   <aura:attribute name="Titration" type="DateTime"/>
+    <aura:attribute name="NJ" type="DateTime"/>
+    <aura:attribute name="NJPEGJ" type="DateTime"/>
+</aura:event>

@@ -1,0 +1,132 @@
+.THIS .sectionHeaderText{
+    font-weight : bold;
+    color: #ffffff;
+    font-size:16px;
+    margin-top: 4px;
+    margin-left: 16px;
+}
+.THIS .sectionHeader{
+    background: linear-gradient(225deg, transparent 14px, #2aa58d 10px);
+    background-position: top right;
+    height: 31px;
+    /*background-color: #6bbbae;*/
+    /* background: linear-gradient(225deg, transparent 20px, #2aa58d 20px);*/
+    /*background: url("/DudopaHCPPortal/resource/1502050470000/abvanzDuodopaPortalFooterImg") no-repeat; */
+}
+.THIS .sectionHeaderWrap{
+    background-color:#fff;
+    margin-bottom:15px;
+}
+.THIS .checkbox{
+    vertical-align:middle !important;
+    display: inline-block;
+}
+.THIS .label
+{
+    display: inline-block;
+    vertical-align:middle !important;    
+}
+.THIS .fc-cell-overlay
+{
+    background: red !important
+}
+.THIS .NJClass
+{
+    background: green !important
+}
+.THIS .busy
+{
+    background: grey !important
+}
+.THIS .notbusy
+{
+    background: white !important
+}
+.THIS .NJPEGClass
+{
+    background: yellow !important
+}
+.THIS .test
+{
+    background: orange !important
+}
+.THIS .toggle
+{
+    display:none !important;
+}
+.THIS .uiInputCheckbox{
+  	display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.THIS .subSectionLabel{
+    font-weight:bold;
+}
+.THIS #abbvieassistance{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left : 25px;
+}
+.THIS .slds-button--brand{
+	margin: 0px;
+    padding: 0px 2rem;    
+}
+.THIS .rightMargin{
+    margin-right: 6px;
+    margin-left: 2em;
+}
+.THIS .leftMargin{
+    margin-left: 6px;
+}
+.THIS .selectIconDiv{
+    padding-top: 35px;
+}
+.THIS .slds-checkbox_toggle [type=checkbox]:checked+.slds-checkbox_faux_container .slds-checkbox_faux{
+    background-color:#35a38c !important;
+    border-color:rgb(171, 173, 176) !important;
+}
+.THIS .slds-checkbox_toggle [type=checkbox]+.slds-checkbox_faux_container .slds-checkbox_faux{    
+    border-color:rgb(171, 173, 176) !important;
+}
+.THIS .selectIconDiv .slds-button--neutral{
+    padding: 0px;
+    border: none;
+}
+.THIS.save-button{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.THIS.slds-button--brand{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.THIS.padding-left-5, .THIS .padding-left-5{
+        padding-left: 5%;
+}
+.THIS.margin-left-5{
+        margin-left: 5%;
+}
+.THIS .rightInfoText{
+    margin-top: 50px;
+    padding-left: 2%;
+}
+@media only screen and (max-width: 767px), only screen and (max-width: 480px){
+    .THIS .selectIconDiv{
+        padding-top: 5px;
+    	/* padding-left: 31%;
+           padding-bottom: 30px;*/
+    	padding-bottom: 10px;
+        margin: 0px 22%;
+    }
+    .THIS.padding-left-5{
+        padding-left: 0%;
+	}
+    .THIS#calendar{
+            padding: 0px 2%;
+    }   
+    .THIS .margin-bottom-0{
+        margin-bottom:0px;
+    }
+}

@@ -1,0 +1,36 @@
+<apex:page controller="DynamicPicklistValueControllerCLS" >
+    <script>
+    debugger;
+        var ele = document.getElementById('sadssd');
+        
+    </script>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlockSection columns="1" >
+                <apex:actionFunction action="{!getPicklistFields}" name="objectChanged" />
+                
+                <apex:selectList id="forObj" size="1" onchange="objectChanged()" value="{!selectedObject}" label="Object name:" >
+                    <apex:selectOptions value="{!objList}"/>           
+                </apex:selectList>
+                
+                <apex:selectList id="forField" size="1" value="{!selectedPicklistAPI}" label="Available picklist:">
+                    <apex:selectOptions value="{!pickFieldList}" />           
+                </apex:selectList> 
+                
+                <apex:inputText value="{!newpickVal}" id="theTextInput" label="New picklist value:"/> 
+                
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection columns="2" title="Applicable record type" id="sadssd" >
+                <apex:repeat value="{!listWrapCLS}" var="rec">
+                    <apex:outputLabel value="{!rec.recordTypeName}" /> <apex:inputCheckbox value="{!rec.checked}" />
+                </apex:repeat>
+            </apex:pageBlockSection>
+            
+            <div align="center">
+            <apex:commandButton action="{!UpdatePicklistField}" value="Save" id="saveButton" style="align: centre"/>        
+            </div>
+        </apex:pageBlock>         
+    </apex:form>
+</apex:page>

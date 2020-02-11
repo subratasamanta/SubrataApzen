@@ -1,0 +1,6 @@
+<aura:component >
+     <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+   <aura:attribute name="res" type="String" />
+   
+   The result is {!v.res}
+</aura:component>

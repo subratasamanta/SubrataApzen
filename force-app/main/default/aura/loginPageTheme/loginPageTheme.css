@@ -1,0 +1,16 @@
+@media (max-width:1348px) and (min-width:1024px){
+.THIS .overrideWidth{
+    flex: 0 0 60%;
+    max-width: 44%;
+}
+}
+
+@media (max-width:1370px)  and (min-width:1348px){
+.THIS .overrideWidth{
+    flex: 0 0 36%;    
+}
+}
+
+.THIS .employeeLoginLink {
+   display: none !important;
+}

@@ -1,0 +1,21 @@
+<template>    
+    <br></br>  
+    <div class="slds-box">
+    <lightning-card  title="Search nearby">    
+        <div>
+            <lightning-progress-indicator current-step={currentlySelected} type="base" variant="base">
+                <lightning-progress-step label="10 KM" value="10" onclick={currentRadiusSelected}></lightning-progress-step>
+                <lightning-progress-step label="20 KM" value="20" onclick={currentRadiusSelected}></lightning-progress-step>
+                <lightning-progress-step label="30 KM" value="30" onclick={currentRadiusSelected}></lightning-progress-step>
+                <lightning-progress-step label="50 KM" value="50" onclick={currentRadiusSelected}></lightning-progress-step>
+                <lightning-progress-step label="100 KM" value="100" onclick={currentRadiusSelected}></lightning-progress-step>
+            </lightning-progress-indicator>
+        </div>
+    </lightning-card>
+    </div>
+    <br></br>   
+    <br></br>
+    <div>
+        <lightning-map map-markers={mapMarkers}  markers-title={mapMarkers}></lightning-map>
+    </div>    
+</template>

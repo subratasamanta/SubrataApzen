@@ -1,0 +1,7 @@
+<aura:event type="APPLICATION" description="Event template">
+   <aura:attribute name="CheckedEducation" type="Boolean"/>
+      <aura:attribute name="CheckedDrug" type="Boolean"/>
+    <aura:attribute name="CheckedProcedure" type="Boolean"/>
+    
+
+</aura:event>

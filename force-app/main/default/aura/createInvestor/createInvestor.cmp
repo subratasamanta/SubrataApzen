@@ -1,0 +1,19 @@
+<aura:component controller="ForceCreateRecordDemoController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="lists" type="String[]" />
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />  
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" /> 
+    <aura:handler event="force:createRecord" action="{!c.createClient }" />
+    <div id="aura-page">
+        <div class="container">
+            <ui:inputSelect label="Select Objects: " multiple="false" class="uiInputSelect" aura:id="ui-inputSecret">
+                <ui:inputSelectOption text="" label="-- none --" />
+                <aura:iteration items="{!v.lists}" var="item">
+                    <ui:inputSelectOption text="{!item}" label="{!item}" />
+                </aura:iteration>
+            </ui:inputSelect>
+        </div>
+        <div class="container">
+            <ui:button label="Create Record" press="{!c.doClickCreateRecordBtn}" />
+        </div>
+    </div>
+</aura:component>

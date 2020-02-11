@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   <aura:handler event="c:NavigateToC2" action="{!c.NavigateComponent}"/>
+   {!v.body}
+</aura:component>

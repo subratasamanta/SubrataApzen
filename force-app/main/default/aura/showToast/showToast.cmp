@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	 <aura:attribute name="yourString" type="String"/>
+    <aura:unescapedHtml value="{!v.yourString}" />
+    <div>
+        	
+        	<ui:button aura:id="button" buttonTitle="Click to see what you put into the field" class="button" label="Click me" press="{!c.showToast}"/>
+    </div>
+</aura:component>

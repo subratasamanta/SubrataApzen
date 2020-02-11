@@ -1,0 +1,14 @@
+.THIS .page-container{
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    background-image: url(/meow/resource/1504636411000/loginPageBkImage);
+}
+.THIS .siteforceContentArea{
+    border-radius: 10px;
+}
+.THIS .heightset
+{
+    height : 100% !important; 
+}

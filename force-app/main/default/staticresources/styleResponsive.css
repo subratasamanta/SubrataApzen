@@ -1,0 +1,426 @@
+.sm-visible, .md-visible {
+    display: none !important;
+}
+ 
+/* mobile device style starts */
+@media (max-width: 480px) {	
+	.slds-small-size_12-of-12, .slds-small-size--12-of-12{
+        min-width:100%;
+    }
+}
+@media (max-width: 767px) {	
+    .slds-small-size--4-of-12 {
+        width: 33.3333333333%;
+    }
+    .slds-small-size--3-of-12 {
+        width: 25%;
+    }
+    .slds-small-size--2-of-12 {
+        width: 16.6666666666%;
+    }
+    .slds-small-size--1-of-12 {
+        width: 8.3333333333%;
+    }
+    .selfServiceProfileMenu {
+        margin-top: 34px !important;
+    }    
+    .selfServiceProfileMenuTrigger {
+        padding: 0 14px 0 0 !important;
+    }  
+   
+    
+    
+	.img-responsive-header {
+        width: 101px !important;
+    }
+    .sm-hidden {
+        display: none !important;
+    }
+    .sm-visible {
+        display: block !important;
+    }
+    .sm-full {
+        clear: both !important;
+        width: 100% !important;
+    }
+    .sm-left {
+        float: left;
+    }
+    .sm-right {
+        float: right;
+    }
+    .sm-customGap {
+        clear: both;
+        padding-top: 10px;
+    }
+    
+    .selfServiceSearchWrapper.big-search-container {
+        height: auto !important;
+    }
+    .selfServiceSearchWrapper .search-wrapper, .selfServiceSearchWrapper .post-container {
+        padding-top: 0 !important;
+    }
+    
+    .home-banner-patient {
+        background-size: cover; 
+        background-position: left; 
+        height: 100%;
+    }
+    
+    /*.homeFooter {
+        position: relative;
+    }*/
+    
+    .patientBannerHead {
+        font-size: 0.8em;
+        margin: 5px 0;
+        width: 100%;
+    }    
+    
+    .patientBannerText {
+        font-size: 0.8em;
+        margin: 0 0 5px 0;
+        width: 95%;
+    }    
+
+    .home-banner-patient-top {
+        height: auto;
+	} 
+    
+    .img-responsive-footer {
+        max-width: 40%;
+    }    
+    
+    .patientBannerBottom {
+        height: auto;        
+    	padding-top: 0;
+    }    
+    
+    .footer-img-left {
+        margin-right: 5px;
+    }    
+    
+    .patientBannerBottomContent {
+        font-size: 0.7em;
+    }    
+    
+    .footerMiddleContainerPatient {
+        width: 100%;
+    }    
+    
+    .footerButtonContainer {
+        float: left;
+        padding-left: 3px;
+        padding-right: 3px;
+        width: 33%;
+    }    
+    
+    .cLiveAgentChatButton .sButton .laBtn {
+        /* background: #00BCB5 !important;
+        border-radius: 4px !important;
+        border-color: transparent !important;
+        color: #fff !important;
+        float: left !important;
+        height: 37px !important;
+        line-height: 31px !important;
+        margin: 5px 0 0 0 !important;
+        padding: 0 !important;
+        text-decoration: none !important; */
+        width: 100% !important;
+    }    
+    
+    .footer-mid {
+        overflow: hidden;
+    }   
+    
+    .img-responsive {
+        margin-top: 20px;
+    }
+    
+    .footer-button {
+        margin-top: 5px;
+    }    
+    
+    .forceCommunityNavigationMenu .menuItemLink {
+        display: table-cell !important;
+        height: auto !important;
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+        text-align: left !important;
+    }
+    
+    .custom_gap {
+        margin-top: 0;
+    }
+    
+    .patient-panel-heading {
+        font-size: 1.0em !important;
+    }    
+    
+    .physicianBannerHead {
+        width: 60%;
+    }
+    .physicianBannerTextLeft {
+        width: 15%;
+    }    
+    .physicianBannerText {
+        font-size: 0.8em;
+        margin-right: 10px;
+        width: 80%;
+    }
+    .physicianBannerContainer-mobile {
+        background-position: top left !important; 
+        /*background-size: 130% !important; */
+        height: auto;
+        overflow: hidden;
+    }
+    .physicianBannerHead {	
+        font-size: 0.8em;
+        width: 70%;
+    }   
+    
+    .footerMiddleContainer {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%;
+    }    
+    
+    .footerButtonContainer-Phy {        
+        width: 100%;
+    }
+    
+    .span-left {
+        font-size: 0.8em;
+        margin-top: 20px;
+    }  
+    .img-responsive-Phy {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }   
+    .footerInner {
+        position: relative;
+    }    
+    
+    .patientBannerButton-buttonContainer {
+        width: 60%;
+    }    
+    
+    .uiInput--select.select:not([multiple]) {
+        height: 1.875rem !important;
+        line-height: 0.875rem !important;
+    }    
+    
+}
+/* mobile device style ends */
+
+/* mid size device style starts */
+/*@media (min-width: 768px) and (max-width: 991px) {	*/
+@media (min-width: 768px) and (max-width: 1024px) {	    
+	.img-responsive-header {
+        width: 75% !important;
+    }
+    
+    .md-hidden {
+        display: none !important;
+    }
+    .md-visible {
+        display: block !important;
+    }
+    .md-full {
+        clear: both !important;
+        width: 100% !important;
+    }
+    .md-left {
+        float: left;
+    }
+    .md-right {
+        float: right;
+    }
+    .md-customGap {
+        clear: both;
+        padding-top: 10px;
+    }    
+    
+    .selfServiceSearchWrapper.big-search-container {
+        height: auto !important;
+    }
+    .selfServiceSearchWrapper .search-wrapper, .selfServiceSearchWrapper .post-container {
+        padding-top: 0 !important;
+    }
+    
+    .home-banner-patient {
+        background-size: cover; 
+        background-position: left; 
+        height: 100%;
+    }
+    
+    .header-login {
+        padding-top: 0;
+    }
+    /*
+    .homeFooter {
+        position: relative;
+    }
+    */
+    
+    .patientBannerHead {
+        font-size: 1.0em;
+        margin: 5px 0;
+        width: 100%;
+    }    
+    
+    .patientBannerText {
+        font-size: 0.8em;
+        margin: 0 0 5px 0;
+        width: 60%;
+    }    
+
+    .home-banner-patient-top {
+        height: auto;
+	} 
+    
+    .img-responsive-footer {
+        max-width: 40%;
+    }    
+    
+    .patientBannerBottom {
+        height: auto;        
+    	padding-top: 0;
+    }    
+    
+    .footer-img-left {
+        margin-right: 5px;
+    }    
+    
+    .patientBannerBottomContent {
+        font-size: 0.7em;
+    }    
+    
+    .footerMiddleContainerPatient {
+        width: 100%;
+    }    
+    
+    .footerButtonContainer {
+        float: left;
+        padding-left: 3px;
+        padding-right: 3px;
+        width: 33%;
+    }    
+    
+    .cLiveAgentChatButton .sButton .laBtn {
+        /* background: #00BCB5 !important;
+        border-radius: 4px !important;
+        border-color: transparent !important;
+        color: #fff !important;
+        float: left !important;
+        height: 37px !important;
+        line-height: 31px !important;
+        margin: 5px 0 0 0 !important;
+        padding: 0 !important;
+        text-decoration: none !important; */
+        width: 100% !important;
+    }    
+    
+    .footer-mid {
+        overflow: hidden;
+    }   
+    
+    .img-responsive {
+        margin-top: 20px;
+    	float: right;
+    }
+    
+    .footer-button {
+        margin-top: 5px;
+    }    
+    /*
+    .forceCommunityNavigationMenu .menuItemLink {
+        display: table-cell !important;
+        height: auto !important;
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+        text-align: left !important;
+    }
+    */
+    .custom_gap {
+        margin-top: 20px;
+    }
+    
+    .patient-panel-heading {
+        font-size: 1.0em !important;
+    }  
+    
+    .physicianBannerHead {
+        width: 70%;
+    }
+    .physicianBannerTextLeft {
+        width: 35%;
+    }    
+    .physicianBannerText {
+        margin-right: 10px;
+        width: 62%;
+    }
+    .footerMiddleContainer {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%;
+    	margin-left: 30px;
+    }  
+	.img-responsive-Phy {
+        margin-top: 0;
+    }   
+    
+    .physicianBannerContainer {
+        height: auto;
+        overflow: hidden;
+    }    
+    
+}
+/* mid size device style ends */
+
+li.myAccount {
+    display: none;
+}
+
+.reportsDataGrid .summaryFormat tr.dataRow th.grouping0 {
+    border: 1px solid #d4d4d4;
+}
+
+.forceCommunityRecordListDesktop.forceListViewManager .listDisplays {
+    min-height: 250px !important;
+}
+/* section for showing Reports Left Nav*/
+.homePageLeftNav div:nth-child(1),.homePageLeftNav div:nth-child(3) {
+    display: block;
+}
+
+#entity-header {
+    display: none;
+}
+.entityItems {
+    display: none;
+}
+.emptyContentInner 
+{
+    margin-top: 20px !important;
+}
+
+.img-responsive-footer.footer-img-left
+{
+    display:none !important;
+}
+
+.footer-mid-left-bottom.text-left
+{
+    margin: 5px 0px 5px 0px !important;
+}
+
+.img-responsive-patient.footer-img-left
+{
+    display:none !important;
+}
+
+.slds-grid.patientBannerBottom
+{
+    padding-bottom: 7px !important;
+}

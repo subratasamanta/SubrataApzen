@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Navigation System">    
+            <lightning-layout multiplerows="true" verticalalign="center">                        
+                    <lightning-layout-item padding="around-small" size="3">
+                            <lightning-button variant="brand" label="Current Tab" title="Current Tab" onclick={navigateCurrentTab}>
+                            </lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="3">
+                            <lightning-button variant="brand" label="Object Home" title="Object Home" onclick={navigateToObjectHome}>
+                            </lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="3">
+                            <lightning-button variant="brand" label="List View" title="List View" onclick={navigateToListView}>
+                            </lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="3">
+                            <lightning-button variant="brand" label="View Record" title="View Record" onclick={navigateToRecordView}>
+                            </lightning-button>
+                    </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout multiplerows="true" verticalalign="center">
+                    <lightning-layout-item padding="around-small" size="3">
+                            <lightning-button variant="success" label="New Record" title="New Record" onclick={navigateToNewRecord}>
+                            </lightning-button> 
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="3">            
+                            <lightning-button variant="success" label="Edit Record" title="Edit Record" onclick={navigateToRecordEditPage}>
+                            </lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="3">
+                            <lightning-button variant="success" label="Related List View" title="Related List View" onclick={navigateToRelatedList}>
+                            </lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="3">
+                            <lightning-button variant="success" label="Web Page" title="Web Page" onclick={navigateToWebPage}>
+                            </lightning-button>
+                    </lightning-layout-item>                    
+            </lightning-layout>
+    </lightning-card>
+</template>

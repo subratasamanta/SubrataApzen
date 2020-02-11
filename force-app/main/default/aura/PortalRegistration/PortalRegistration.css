@@ -1,0 +1,158 @@
+.THIS{
+    margin-top: 62px;
+}
+.THIS .sectionHeader{
+    background-color: #6bbbae;
+}
+
+.THIS .sectionHeaderText{
+    color: #fffffb;
+    font-size: 27px;
+    padding-left: 10px;
+    font-weight: 300;
+}
+
+.THIS .contentWrap{
+    background-color: #2aa58d;
+    border-radius: 10px;
+    padding-top: 9px;
+    margin-top: 5%;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.THIS .infoText{
+    color: white;
+    font-size: 16px;
+    padding: 2% 2% 0% 16px;
+    font-weight: 400;
+}
+
+.THIS .inputWrap{
+    padding-left: 1%;
+}
+
+.THIS .inputWrap .slds-button, .THIS .inputWrap .checkboxText label{
+    color:white;
+}
+.THIS .inputWrap .checkboxText label{
+    float: right;
+    margin-top: -5px;
+    width: 90%;
+}
+.THIS .inputWrap .checkboxText{
+    margin-top: 12px;
+}
+.THIS .searchIcon{
+    line-height: 15px;
+    width: 55px;
+    height: 35px;
+    background-image: url(http://www.clker.com/cliparts/B/t/2/T/7/O/search-icon-small-16x16.svg.thumb.png);
+    background-size: 36px 40px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+.THIS .margin--right-2{
+    margin-right:2px;
+}
+.THIS .clearBoth{
+    clear:both;
+}
+.THIS .inputWrap .slds-input, .THIS .infoText .slds-input{
+    height: 24px!important;
+    min-height: 34px;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 6px 12px;
+    line-height: 1.3;
+}
+.THIS .inputWrap .slds-input:hover, .THIS .infoText .slds-input:hover{
+ 	background-color:#fff;   
+}
+.THIS .inputWrap .slds-m-around_x-small, .THIS .infoText .slds-m-around_x-small{
+    margin-top: 15px;
+}
+.THIS .inputWrap .slds-grid .slds-m-around_x-small{
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+.THIS .inputWrap .slds-button__icon_right{
+ 	float:right;
+    margin-bottom: 14px;
+    padding-right: 7px !important;
+}
+.THIS .inputWrap .slds-button__icon_right button, .THIS .slds-button__icon_right button{
+    height: 30px;
+    line-height: 0;
+    border-radius: 4px;
+    background-color: #005570;
+    border-color: #005570;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+.THIS input[placeholder] {
+    font-size: 14px;
+}
+.THIS .slds-modal__container .slds-button{
+    border-radius: 4px;
+    background-color: #005570;
+    padding: 6px 12px;
+    color: white;
+}
+.THIS .slds-modal__container .slds-modal__header{
+    border-bottom: 5px solid #00bcb5;
+}
+.THIS hr{
+    border-color: #fff;
+    border-style: dashed;
+    margin: 20px 8px 20px 8px;
+}
+.THIS .inputWrap .slds-button__icon_right {
+    margin-top: 27px;
+}
+.THIS .uiInput--default.has-error .form-element__help {
+    color: #fff;
+}
+.THIS .contentWrap .loginLink{
+    float: right;
+    color: #fffffb;
+    font-size: 14px;
+    margin-right: 8px;
+    font-weight: 400;
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #005570;
+    border-color: #005570;
+    padding: 4px 15px 5px 15px;    
+}
+.THIS .contentWrap .loginLink:hover{
+    text-decoration:none;
+}
+.THIS .nextBtn-sm{
+	display:none;
+}
+@media only screen and (max-width: 767px), only screen and (max-width: 480px){
+    .THIS{
+        margin-top: 0px;
+	}
+ 	.THIS .displayBlock-small{
+        display: block;
+        padding-bottom: 10px;
+    }   
+    .THIS .inputWrap{
+     	padding-left: 0px;   
+    }
+    .THIS .overflow-sm{
+        overflow:hidden;
+        margin-top: 8px;
+    }
+    .THIS .nextBtn-sm{
+        display:block;
+        float: right;
+        margin-bottom: 14px;
+        padding-right: 7px!important;
+        margin-top: 27px;
+    }
+    .THIS .nextBtn-lg{
+        display:none;
+    }
+}

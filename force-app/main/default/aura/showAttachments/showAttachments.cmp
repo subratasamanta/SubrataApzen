@@ -1,0 +1,9 @@
+<aura:component controller="Listattachments" implements="force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+        <aura:attribute name="attachments" type="List" />
+        <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+        <aura:iteration items="{!v.attachments}" var="files">
+            {!files.Id}    
+    	</aura:iteration>
+    
+</aura:component>

@@ -1,0 +1,253 @@
+.THIS .wrapper{
+    border: 2px solid #cdcdcd;
+    border-radius: 6px;
+    padding: 30px 50px;
+    background-color: #fff;
+    opacity: .9;
+    height: 430px;
+}
+.THIS input{
+    width: 344px;
+    height: 40px;
+    padding: 6px 25px;
+    margin-top: 15px;
+    border: 2px solid #cdd2d6 !important;
+    border-radius: 4px;
+    /* position: absolute;*/
+    background-color: #fff;
+    /*   left: 12%;*/
+}
+.THIS .welcomeText{
+    font-size: 25px;
+    color: #566487;
+    margin-top: 7px;
+    margin-bottom: 136px;
+    text-align: center;
+}
+.THIS .submitBlock{
+    margin-top: 27px;
+    overflow:hidden;
+}
+.THIS .submitBlock a{
+    color:#566487; 
+    text-decoration: underline;
+}
+.THIS .floatRight{
+    float:right;
+    width: 150px;
+}
+.THIS .floatRight button{
+    width: 138px;
+    background-color: #5ebd3f;
+    height: 40px;
+    border: 0px;
+    color: #fff !important;
+    border-radius: 6px;
+}
+.THIS .uiButton--default:hover, .THIS .uiButton--default:focus, .THIS .uiButton--default.is-selected {
+    text-shadow: none;
+    background: #5ebd3f !important;;
+}
+.THIS .floatRight span{
+    color: #fff;
+    font-size: 17px;   
+}
+.THIS .floatRight a{
+    font-size: 13px;
+    margin-left: 8px;
+}
+.THIS .errorBlock{
+    position: absolute;
+    top: 21px;
+    /*left: 164px;*/
+    color: #cc0000;
+    /*width: 27%;*/
+    line-height: 15px;	
+    font-family: Lato;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0px 2%;
+}
+.THIS #sfdc_forgot p{
+    margin-top: 48px;
+    font-size: 13px;
+}
+.THIS .subText{
+    font-size: 13px;
+    margin-left: 119px;
+    margin-top: -4px;
+}
+.THIS #sfdc_username_container{
+    position: absolute;    
+    top: 201px;
+}
+.THIS #sfdc_password_container{
+    position: absolute;    
+    top: 263px;
+}
+
+/***********************Changes made by Partha *********************************/
+.THIS .abbvieLogo-login {
+    display: block !important;
+    height: 86px !important;
+    width: 225px !important;
+    margin-left: 76px;
+    margin-top: 35px;
+    
+    /*display: block!important;
+    height: 24%!important;
+    width: 60%!important;
+    margin-left: 16%;
+    margin-top: 8%;*/
+} 
+
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media only screen and (max-width: 1025px) 
+    { 
+ 
+        .THIS .abbvieLogo-login{
+        margin-left: 59px;
+    	margin-top: 35px;
+    }
+
+}
+
+
+
+/****************************************/
+@media only screen and (max-width: 767px){
+    .THIS .wrapper{
+        padding-left:10px;
+        padding-right:10px;
+        height:auto;
+    }
+    .THIS .welcomeText{
+        font-size: 25px;
+        text-align: center;
+    }
+    .THIS input{
+        left: 15px;
+        width: 90%;
+        left: 5%;
+    }
+    .THIS .errorBlock{
+        width: 96%;
+        left: 10px;
+    }
+    .THIS .sfdc_usernameinput{
+        top:50%;
+    }
+    .THIS .sfdc_passwordinput{
+        top:63%;
+    } 
+    .THIS .abbvieLogo-login{
+        margin-left: 98px;
+    	margin-top: 35px;
+    }
+   
+}
+/**************************************************************************/
+@media only screen and (max-width: 480px){
+    .THIS .wrapper{
+        padding-left:10px;
+        padding-right:10px;
+        height:auto;
+    }
+    .THIS .welcomeText{
+        font-size: 25px;
+        text-align: center;
+    }
+    .THIS input{
+        left: 15px;
+        width: 90%;
+        left: 5%;
+    }
+    .THIS .errorBlock{
+        width: 96%;
+        left: 10px;
+    }
+    .THIS .sfdc_usernameinput{
+        top:50%;
+    }
+    .THIS .sfdc_passwordinput{
+        top:63%;
+    } 
+    .THIS .abbvieLogo-login{
+        margin-left: 72px;
+    	margin-top: 35px;
+    }
+}
+/********************************************************************************/
+@media only screen and (max-width: 320px){
+    .THIS .subText{        
+        margin-top: -41px;
+    } 
+    .THIS .abbvieLogo-login{
+        margin-left: 41px;
+    	margin-top: 26px;
+    }
+    
+}
+/********************************************************************************/
+@media only screen and (max-width: 840px) and (min-width : 768px) {
+     .THIS .abbvieLogo-login{
+        margin-left: 138px;
+    	margin-top: 35px;
+    }
+    
+}
+
+@media only screen 
+    and (max-width: 767px)
+    and (orientation: landscape){
+    .THIS .abbvieLogo-login{
+        margin-left: 225px;
+    	margin-top: 35px;
+    }
+}
+
+@media only screen 
+    and (max-width: 569px)
+    and (orientation: landscape){
+    .THIS .abbvieLogo-login{
+        margin-left: 166px;
+    	margin-top: 35px;
+    }
+}
+
+
+@media only screen 
+    and (min-width: 1441px){
+    .THIS .abbvieLogo-login{
+       /* margin-left: 260px;*/
+         margin-left: 126px;
+    	margin-top: 35px;
+    }
+}
+
+@media only screen 
+    and (min-width: 1919px){
+    .THIS .abbvieLogo-login{
+       /* margin-left: 260px;*/
+         margin-left: 150px;
+    	margin-top: 35px;
+    }
+}
+@media only screen 
+    and (min-width: 2559px){
+    .THIS .abbvieLogo-login{
+       /* margin-left: 260px;*/
+         margin-left: 250px;
+    	margin-top: 35px;
+    }
+}
+@media only screen 
+    and (min-width: 3839px){
+    .THIS .abbvieLogo-login{
+       /* margin-left: 260px;*/
+         margin-left: 470px;
+    	margin-top: 35px;
+    }
+}

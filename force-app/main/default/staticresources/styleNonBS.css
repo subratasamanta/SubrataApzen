@@ -1,0 +1,1435 @@
+html {        
+    min-height:100%;
+    overflow-x: hidden;
+    height:100%;
+}
+body {
+    /*background: #DFFFFF;
+    background: #F3FFFF;*/
+    height: 100%;
+    margin: 0;
+	padding: 0;
+}
+.page-container {
+	height: 100%;
+	margin: 0 auto;
+    /*position: relative;*/
+    width: 100%;
+}
+.container-fluid {
+	height: 100%;
+	margin: 0 auto;
+    width: 100%;    
+}
+
+section {
+    /*background: #F3FFFF;*/
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.text-container {
+    /*background: #F3FFFF;*/
+}
+.custom_gap {
+    margin-top:15px;
+}
+
+.loginFormSec {
+    margin-top: 90px;
+}
+
+input, .uiInput--select.select, .uiInput--select .select, textarea, .slds-radio .slds-radio--faux {
+    border: 1px solid #ccc !important;
+}
+.selfServiceBaseCaseCreation .two-column .mdp-container, .selfServiceBaseCaseCreation .two-column .deflection-container {
+    width: 100%;
+}
+/*  header style starts  */
+header {
+    background: #ffffff !important;
+}
+
+.header-top {    
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.header-mid {
+	/*border-top: 1px solid #5e9999;*/
+	/*background: #20abe6;*/
+    /*background: #6bbbae;*/
+    /*background: #2aa58d;*/
+	/*min-height: 129px;*/
+}
+
+.header-mid :selection {
+    /*background: #d6ffff !important;*/
+    background: #bddad1 !important;
+}
+.header-search {
+	padding-top: 0px;
+    z-index:0;
+}
+.header-login {
+	padding-top: 15px;
+}
+
+.physicianBannerEdit {
+        background-color:#f6f8f9;
+}
+.search-button.uiButton{
+    background-color: #2aa58d !important;
+}
+
+/* physician banner management - starts */
+.header-bottom {
+	/*background-image: linear-gradient(#3c7294, #5597ad);*/
+    background-color: linear-gradient(#3c7294, #5597ad);
+}
+.seperatorPhysician {
+    clear: both;
+}
+.physicianBannerContainer {
+    background-size: contain !important; 
+    /*background-position: center !important;*/ 
+    /*height: 200px;*/
+    height: auto;
+    overflow: hidden;
+}
+.physicianBannerHead {
+    clear: both;
+    color: #005570;
+    float: right;
+    font-size: 1.3em;
+    margin: 27px 0 15px 0;
+    text-align: left;
+    text-transform: uppercase;
+    width: 50%;
+}
+.physicianBannerTextLeft {
+    float: left;
+    width: 50%;
+}
+.physicianBannerText {
+    color: #005570;
+    float: left;
+    font-size: 1.0em;
+    margin: 0 0 10px 0;
+    text-align: left;
+    width: 40%;
+}
+.physicianBannerBottom {
+    clear: both;
+    float: right;
+    font-size: 1.0em;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+.physicianBannerBottom-buttonContainer {
+    float: right;
+    width: 20%;
+}
+.physicianBannerBottom-button  {
+	background: #00BCB5;
+	border-radius: 4px;
+	color: #fff;
+	float: left;
+	height: 37px;
+	line-height: 37px;
+	/*margin: 20px 0 0 30px;
+	padding: 0 45px; */   
+	margin-top: 7px;
+	padding: 0;
+    text-align: center;
+    text-decoration: none;
+	width: 100%;
+}
+.physicianBannerBottom-button a {
+	color: #fff;
+	text-decoration: none;    
+}
+.bannerContainer {
+    height: 100%;
+    max-height: 100%;
+}
+/* physician banner management - ends */
+
+
+/* header style ends */
+
+/* content section starts */
+.main-content {
+	/*min-height: 250px;*/
+}
+.content-left {
+    margin: 40px 0px 25px 25px;
+}
+.content-right {
+	/*background: #ccc;
+	min-height: 250px;*/
+	/*right: 15px;*/
+}
+/* featured box - starts */
+.featured-box {
+    background: #005570;
+    border-radius: 6px;
+    height: auto;
+    overflow: hidden;
+    width: 85%;
+}
+.featured-box-1 {
+    /*padding-bottom:5px;
+    padding-top:5px;*/
+}
+.featured-box-2 {
+    background: #00bcb5;
+	margin-top: 20px;
+}
+.span-left {
+    color: #fff;
+    float: left;
+	font-size: 1.3em;
+    margin: 30px 0 20px 0;
+}
+.span-left > div {
+    padding-left: 20px;
+}
+.span-right {
+    float: right;
+    margin: 2px 0;
+}
+.span-right-img-1 {
+    padding-right: 10px;
+    
+}
+.featured-box-2 .span-left {
+    margin-top: 17px;
+    margin-bottom: 8px;
+}
+.featured-box-2 .span-right {
+    margin-top: 2px;
+}
+.featured-box-2 .uiInput--select.select:not([multiple]) {
+    font-size: 0.85rem;
+    height: 1.8rem !important;
+    width: 100% !important;
+}
+.featured_button_1 {
+    background: #005571;
+    border: 0;
+    color: #ffffff;
+    font-size: 1.0em;
+    line-height: 28px;
+}
+.featured_button_1:hover {
+    background: #005571;
+    color: #ffffff;
+}
+.forceCommunityOmniBox.selfServiceSearchWrapper .search-button .search-button-icon{
+        color: #fff !important;
+}
+.menu-close-button{
+    display:none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    font-size: 22px;
+    color: white;    
+    z-index: 10000000;
+    width: 100%;
+    background: green;
+    text-align: right;
+    padding-right: 8px;
+    background: #2aa58d!important;
+}
+.forceCommunityNavigationMenu .navigationMenuWrapper.showElement{
+    top: 28px;
+}
+
+.forceCommunityRecordDetail .forceRecordLayout .full.forcePageBlockSectionView .slds-section__title{
+	color: white!important;
+    background:linear-gradient(225deg,transparent 14px,#2aa58d 10px);
+	border:0px;
+}
+/*.forceListViewManager .forceListViewManagerPrimaryDisplayManager .slds-table--header-fixed thead th{    
+    border-bottom: 1px solid rgb(244, 244, 244);   
+}*/
+.forceListViewManager .forceListViewManagerPrimaryDisplayManager .slds-table--header-fixed_container{
+    padding-top:0px;
+}
+.forceListViewManager .slds-page-header_joined{
+    border-bottom: none;
+}
+.forceListViewManager .forceListViewManagerPrimaryDisplayManager .slds-cell-fixed{
+	position:relative;
+	width: 100% !important;
+    /*border-bottom: 1px solid rgb(244, 244, 244);*/
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+}
+.forceListViewManagerGridColumnHeaderMenu ul, .forceListViewManagerGridColumnHeaderMenu .slds-dropdown, .forceListViewManagerGridColumnHeaderMenu  .slds-dropdown__item>a:active, .forceListViewManagerGridColumnHeaderMenu  .slds-dropdown__item>a{
+    background-color: #2aa58d !important;
+}
+.forceListViewManagerGridColumnHeaderMenu .slds-icon-text-default {
+    fill: #fff;
+}
+.selfServiceProfileMenuTrigger .trigger-link:focus{
+    box-shadow:none !important;
+    border: 1px solid #2574a9;
+}
+.slds-max-medium-table--stacked-horizontal tr>td:first-child{
+        text-align: left;
+}
+@media (min-width: 768px) { 
+    .span-left {
+        font-size: 1.0em;
+        margin: 30px 0 20px 0;
+	}
+    .featured-box-2 .uiInput--select.select:not([multiple]) {
+        font-size: 0.6rem;
+        height: 1.5rem !important;
+        width: 100% !important;
+    }
+}
+@media (min-width: 992px) {  
+    .span-left {
+        font-size: 1.2em;
+        margin: 30px 0 20px 0;
+	}
+    .featured-box-2 .uiInput--select.select:not([multiple]) {
+        font-size: 0.8rem;
+        height: 1.75rem !important;
+        width: 100% !important;
+    }
+}
+@media (min-width: 1200px) {  
+}
+/* featured box -ends */
+
+/* notification panel starts */
+
+.panel {
+	border-radius: 0;
+	border-top: 0;
+}
+
+.customPanel {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    /*margin-right: 7px;*/
+    padding-bottom: 10px;
+}
+
+.panel-default {
+	/*margin-top: 10px;*/
+}
+.panel-default>.panel-heading {
+    background-color: #fff;
+	border-bottom: 1px solid #e8e8e8;
+	border-top: 5px solid #FFCE00;
+    color: #5f6176;
+    overflow: hidden;
+}
+.panel-default>.panel-heading > h3{
+    margin: 5px 10px;
+	/*font-size: 1.4em;*/
+}
+.notification-text {
+    font-size: 1em;
+}
+.panel-body {
+	border-bottom: 1px solid #e8e8e8;
+    font-size: .8em;
+    margin: 8px 0;
+    overflow: hidden;
+}
+.panel-body:last-child {
+    border-bottom: 0px;
+}
+.panel-body-left {
+	/*background: #fff;*/
+	float: left;
+	height: 100%;
+    margin-right: 10px;
+    padding-top: 7px;
+    padding-left: 7px;
+	width: 37px;
+}
+.panel-body-mid {
+	color: #898d90;
+    font-weight: normal;
+	float: left;
+	height: 100%;
+    line-height: 25px;
+    width: 90%;
+    word-wrap: break-word;
+}
+.panel-body-right {
+	float: right;
+	height: 100%;
+	width: 28px;
+}
+.panel-footer {
+	background: transparent;
+    clear: both;
+    margin: 10px 0 0 0;
+}
+.activeLeft {	
+}
+.activeMid {
+	color: #284850;
+}
+.activeRight {	
+}
+.cNotificationPhysician .notificationButton {
+    /*color: #135f90;
+    padding: .5rem 1.5rem !important;
+    font-size: 1.25rem !important;*/
+    border: 1px solid;
+}
+.notification-head {
+    color: #005570;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+/* notification panel ends */
+
+/* content section ends */
+
+/*  footer style starts  */
+footer {
+	color: #134d63;
+	/*font-size: 1.2em;
+	min-height: 390px;*/
+}
+.footer-top {
+	background: #d6e9f8;
+	color: #134d63;
+	/*font-size: 1.2em;*/
+    margin-top: 25px;
+	padding: 1px 0;
+}
+.footer-mid {
+	/*background: #004b62;*/
+    /*background: #005570;*/
+    /*background: #6bbbae;*/
+    /*background: url("/DudopaHCPPortal/resource/1502050470000/abvanzDuodopaPortalFooterImg") no-repeat;*/ 
+	/* color: #6eb1ca; */
+	color: #ffffff;
+	font-size: .8em;
+	/*border-bottom: 5px solid #FFCE00;*/
+    /*padding-bottom: 5px;*/
+    padding-top: 5px;
+    background: #2aa58d;
+    /*background: linear-gradient(225deg, transparent 20px, #2aa58d 20px);*/
+    background: linear-gradient(205deg, transparent 30px, #2aa58d 20px);
+    background-position: top right;
+    /*background: linear-gradient(135deg, transparent 30px, #2aa58d 0);*/
+}
+/* this styles are used to fix footer for home and inner pages == starts */
+.footerInner {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+}
+.footerSeperator {
+    clear: both;
+    height: 80px;
+}
+.footerSeperatorMas {
+    clear: both;
+    height: 80px;
+}
+.homeFooter {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;    
+    z-index: 1; /* implemented to fix search content issue */
+    /*background: url("/DudopaHCPPortal/resource/1502050470000/abvanzDuodopaPortalFooterImg") no-repeat;*/    
+}
+.homeFooter1 {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;    
+    z-index: 1; /* implemented to fix search content issue */
+    /*background: url("/DudopaHCPPortal/resource/1502050470000/abvanzDuodopaPortalFooterImg") no-repeat;*/    
+}
+.footerSeperatorHome {
+    clear: both;
+    /*height: 225px;*/
+    height: 80px;
+}
+/* this styles are used to fix footer for home and inner pages == ends */
+.footer-bottom {
+	padding: 15px 0 25px 0;
+}
+.footer-button  {
+	background: #FFCE00;
+	border-radius: 4px;
+	/*color: #fff;*/
+    color: #005570;
+	float: left;
+	height: 37px;
+	line-height: 37px;
+	/*margin: 20px 0 0 30px;
+	padding: 0 45px; */   
+	margin-top: 4px;
+	padding: 0;
+    text-align: center;
+    text-decoration: none;
+	width: 100%;
+}
+.footer-button a, .footer-button a:visited, .footer-button a:hover  {
+	/*color: #fff;*/
+    color: #005570;
+    text-decoration: none;
+}
+.footerIconContainer {
+    float: left;
+    width: 98%;
+}
+.footerButtonContainer {
+    float: left;
+    width: 50%;
+}
+.footerButtonContainerChat {
+    float: left;
+    width: 63%;
+}
+.footer-icon {
+	float: left;
+	margin: 0;
+}
+.footer-text {
+	float: left;
+    line-height: 47px;
+    padding-right:5px;
+}
+.footer-mid-left {
+    /*padding: 15px 0 0 0;*/
+}
+.footer-mid-left-top {
+    display: block;
+    /*padding-bottom: 10px;*/
+}
+.footer-mid-left-bottom {
+    /*display: block;*/
+    clear: both;
+    float: left;
+}
+.footer-img-left {
+    margin-right: 15px;
+}
+.footer-mid-right {
+    overflow: hidden;
+    /*padding: 25px 0;*/
+}
+.footer-mid-right-text {
+	clear: both;
+	color: #6eb1ca;
+	float: right;
+}
+.footer-mid-right-text a {
+	color: #6eb1ca;
+}
+.footer-img {
+    display: block;
+	float: right;
+    padding-bottom: 11px;
+    padding-top: 6px;
+}
+.footer-bottom {
+	color: #bc7775;
+	/*font-size: .8em;*/
+	padding: 20px 0 35px 0;
+}
+.footerMiddleContainer {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 62%;
+}
+/* footer style ends */
+
+.slds-col .ui-widget, .slds-col--padded .ui-widget, .cb-drop-container .ui-widget {
+    clear: both;
+    margin: 0;
+}
+/* search section starts */ 
+@media only screen and (min-width: 48em) {
+    .selfServiceSearchWrapper.big-search-container {
+        height: auto;
+    }
+    /*
+    .selfServiceSearchWrapper .search-wrapper, .selfServiceSearchWrapper .post-container {
+    padding: 75px 30px 0 30px;
+    
+	}*/
+    .selfServiceSearchWrapper .search-wrapper, .selfServiceSearchWrapper .post-container {
+    	margin-top: 10px;
+        padding: 0;
+	}
+}
+.forceCommunityOmniBox.selfServiceSearchWrapper .search-input-group, .forceCommunityOmniBox.selfServiceSearchWrapper .search-button.uiButton, .forceCommunityOmniBox.selfServiceSearchWrapper .search-field {
+    height: 40px;
+}
+.forceCommunityOmniBox.selfServiceSearchWrapper .search-button.uiButton, 
+.forceCommunityOmniBox.selfServiceSearchWrapper .has-input .search-button.uiButton, 
+.forceCommunityOmniBox.selfServiceSearchWrapper .search-button.uiButton.focus {
+    width: 70px;
+    /*background-color: #2574a9;*/
+}
+.forceCommunityOmniBox.selfServiceSearchWrapper .search-button.uiButton > span, 
+.forceCommunityOmniBox.selfServiceSearchWrapper .has-input .search-button.uiButton > span, 
+.forceCommunityOmniBox.selfServiceSearchWrapper .search-button.uiButton.focus > span {
+    text-align: center;
+}
+/* modified at APR-24-2017 */
+.forceCommunityOmniBox.show-result .result-container {
+    display: none !important;
+}
+
+/* search section ends */
+
+/* header right login starts */
+.header-login .selfServiceProfileMenuTrigger a {
+    color: #35a38c;
+    text-shadow: none;
+}
+/* header right login ends */
+    
+/* navigation starts */
+/*
+.navigationMenuWrapper ul.navigationMenu li:first-child {
+    display: none;
+}
+*/
+ul.navigationMenu li.navigationMenuNode:nth-child(1) {
+    display: none;
+}
+
+.forceCommunityNavigationMenu {
+    background: #2aa58d !important;
+    border: 1px solid #5e9999 !important;
+}
+.navbar {
+    border: none;
+    min-height: 0;
+    margin-bottom: 0;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.nav-tabs.nav-justified>li>a {
+	border-bottom: 0;
+	border-radius: 0;
+}
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
+	background: none;
+    border-bottom-color: transparent;
+	border: none;
+}
+.nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav>li>a:hover {
+    background-color: #19a0da;
+	border-left: 1px solid transparent;
+	border-top: none;
+}
+.nav>li:nth-child(2) {
+	background: #32acdf;
+}
+.nav>li:nth-child(3) {
+	background: #4cb5e2;
+}
+.nav>li:nth-child(4) {
+	background: #66c0e5;
+}
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media (min-width: 768px) {
+	.nav > li > a {		
+		color: #FFF;
+		/*font-size: .8em;	*/
+		min-height: 80px;
+		padding-top: 30px;
+	}
+	.nav-tabs.nav-justified>li {
+		border-left: 1px solid #9df0fe;
+	}
+	.nav-tabs.nav-justified>li:last-child {
+		background: #7fcaea;
+		border-right: 1px solid #9df0fe;
+	}
+    /* reduce form page width 
+   .forcePageBlockSection {
+    	width: 100% !important;
+	}*/
+}
+@media (min-width: 992px) {
+	.nav > li > a {		
+		color: #FFF;
+		/*font-size: 1.4em;	*/
+		min-height: 129px;
+		padding-top: 30px;
+	}
+	.nav-tabs.nav-justified>li {
+		border-left: 1px solid #9df0fe;
+	}
+	.nav-tabs.nav-justified>li:last-child {
+		background: #7fcaea;
+		border-right: 1px solid #9df0fe;
+	}
+   
+    /* reduce form page width 
+   .forcePageBlockSection {
+    	width: 50% !important;
+	}*/
+}
+@media (min-width: 1200px) {
+	.nav > li > a {			
+		color: #FFF;
+		/*font-size: 1.4em;		*/
+		min-height: 129px;
+		padding-top: 30px;
+	}
+	.nav-tabs.nav-justified>li {
+		border-left: 1px solid #9df0fe;
+	}
+	.nav-tabs.nav-justified>li:last-child {
+		background: #7fcaea;
+		border-right: 1px solid #9df0fe;
+	}
+    /* reduce form page width 
+   .forcePageBlockSection {
+    	width: 50% !important;
+	}*/
+}
+.label{
+    /*text-align:left;*/
+}
+/* navigation ends */
+.single {
+    /*font-size: 1.6em;*/
+    height: auto;
+    width: 100% !important;
+}
+
+/* main content area starts */
+
+.uiInput--default .picklistCtrl{
+    line-height: 0;
+}
+.slds-col--padded {
+    padding-left: 0;
+    padding-right: 0;    
+}
+.uiContainerManager {
+    height: auto;
+}
+/* main content area ends */
+
+ul.forceActionsContainer, ul.oneActionsRibbon {
+    /*display:none;*/
+}
+
+div.leftNav ul li {
+    display: none;
+}
+div.leftNav ul li:first-child, div.leftNav ul li:last-child {
+    display: block;
+}
+div.fileList {
+    min-height: 250px;
+}
+.label {
+    font-size: 100%;
+}
+
+.submitButtonContainer {
+    width: 50% !important;
+}
+.submitButtonContainer .caseCreationButton .label {
+    text-align: center !important;
+}
+
+.uiInput--select.select:not([multiple]), .uiInput--select .select:not([multiple]), .uiInput--select .uiPopupTrigger a {
+   	/*height: 2.875rem !important;*/ /* 3-Aug- Changed to maintain same height with textboxes */ 
+    min-height: calc(2.125rem + 2px);
+}
+.uiInput--select .uiPopupTrigger a {
+    line-height: 2.875rem !important;
+}
+.uiMenuList--default .uiMenuItem>a, .uiMenuList--default .uiMenuItem>span {
+    /*font-size: 1.4rem !important;*/
+}
+
+/* forms and buttons */
+@media only screen and (min-width: 48em) {
+    .selfServiceBaseCaseCreation .mdp-container {
+        margin: 50px auto 0 auto;
+        width: 100% !important;
+    }
+}
+.selfServiceCaseCreate .forceRecordLayout .forceInputPicklist {
+    width: 50%;
+}
+.LatamCustomPage .uiInput--textarea {
+    /*width: 50%;*/
+}
+/* reports management */
+.homePageLeftNav div:nth-child(1),.homePageLeftNav div:nth-child(3) {
+    display: none;
+}
+.sfaAnalyticsHome .headerRegion .leftHeaderRegion {
+    display: none !important;
+}
+.test-fileshome-leftHeader {
+    display: none;
+}
+#navItemsReport ul li, #navItemsFolder ul li {
+    display: none;
+}
+#navItemsReport ul li:nth-child(1), #navItemsFolder ul li:nth-child(2) {
+    display: block;
+}
+.analyticsHomeLeftNavItem a {
+    /*font-size: 1.2rem !important;*/
+}
+
+@media only screen and (min-aspect-ratio: 4/3) and (min-width: 48em), only screen and (min-width: 64.0625em) {
+    .LatamCustomPage .selfServiceCaseCreate .footer {    	
+	}
+    .LatamCustomPage .selfServiceCaseCreate .footer .submitButtonContainer {
+        float: right !important;
+    }
+    .notificationBtnAlignment {
+        margin: 0 auto;
+        width: 26%;
+    }
+}
+
+
+.selfServiceCaseCreate .caseHeader h1 {
+    /*font-size: 1.5rem !important;*/
+}
+.slds-text-heading--medium {
+    color: rgb(1,74,109);
+    /*font-size: 2rem !important;*/
+} 
+.siteforcePanelsContainer .forceRecordLayout select {
+       /* font-size: 1.3rem !important;*/
+}
+.CustomButton {
+    background: #005570 !important;
+    margin-bottom: 15px;
+}
+.CustomButton:active,.CustomButton:hover,.CustomButton:visited {/*
+    background: rgb(0,85,113);
+    color: #ffffff;
+    font-size: 1.5rem !important;*/
+}
+.slds-modal__container .slds-modal__header {
+    background: rgb(234,245,251);
+    border-bottom: 5px solid rgb(0,157,218);
+}
+
+.slds-modal__footer {
+    background-color: #F6F6F6 !important;
+    border-top: 1px solid #E4E4E4 !important;
+}
+
+
+button[title="Save & New"], button[title="Guardar y nuevo"] {
+    display: none;  
+}
+.forceCommunityUserSettings .savecancelbuttoncontainer .cancelbutton > span, .forceCommunityUserSettings .savecancelbuttoncontainer .savebutton > span {
+    text-align: center;
+}
+
+/* list-item heights */
+.forceCommunityRecordListDesktop.forceListViewManager .listDisplays {
+    min-height: 200px !important;
+}
+/* profile style ends */
+
+.row {
+    clear: both;
+    display: block;
+}
+/* my patient page dropdown */
+.listViewPickerPanel {
+   display: block !important;
+   /* width: 50%;*/
+}
+div[title*="Upload File"], div[title*="Cargar archivos"] {
+    display: none;
+}
+
+/* feed section management of user profile */
+.userFeed {
+    display: none;
+}
+
+/* report page record display  */
+.forceCommunityReportPage .reportsReportPage.hideOverflow {
+    z-index: 0 !important;
+}
+/* modal issue */
+div.DESKTOP.uiModal.open.active {
+    z-index: 3 !important;
+}
+/* general button style */
+ul.slds-button-group li.slds-button, .CustomButton, .userDetailsEditButton {
+    background: #005570 !important;
+    color: #ffffff !important;
+}
+.CustomButton:active,.CustomButton:hover,.CustomButton:visited {
+    color: #ffffff;
+}
+ul.slds-button-group li.slds-button a.forceActionLink div.slds-truncate {
+    color: #ffffff !important;
+}
+.forceListViewManagerDisplaySwitcher {
+    /*z-index: 0 !important;*/
+}
+
+/* calender fix */
+.fc-view, .fc-view > table {
+    z-index: 0 !important;
+}
+
+/* 2nd column chart */
+.forceListViewManagerSecondaryDisplayManager {
+    z-index: 0 !important;
+}
+
+.header-bottom-patient {
+    background: #eaf5fb;
+    border-bottom: 1px solid #94d3ed;
+    border-top: 1px solid #94d3ed;        
+    padding: 27px 15px;
+}
+.CustomButtonSearch {
+    margin-top: 10px;
+}
+.masText1 {
+    color: #4b7b8c;
+    font-size: 1.1em;
+}
+.masText2 {
+    color: #808285;
+    font-size: 1.2em;
+}
+.masText3 {
+    color: #808285;
+    font-size: 1.1em;
+}
+.masNum1, .masNum3 {
+    color: #129dd9;
+    font-size: 3.5em;    
+    font-weight: 300;
+}
+.masNum2 {
+    color: #129dd9;
+    /*font-size: 6.6em;*/
+    font-size: 4.6em;
+    font-weight: 200;  
+}
+.masinputtext {        
+    width: 100% !important;
+}
+.massearchbutton{
+    width: 100% !important;
+    height: 100% !important;
+    background: #005570 !important;
+    color: #ffffff !important;
+}
+.masssearchresulttext{
+    color: #005570 !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mashmoresults{
+    color: #817E7D; 
+    font-size: 0.8em;
+}
+.mashmoresultslink{
+    font-size: 0.8em;
+}
+
+/* Data grid table style - starts */
+
+/* modified at APR-24-2017 */
+.slds-is-resizable .slds-th__action:focus, .slds-is-resizable .slds-th__action:focus:hover {
+    background: #005570 !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+
+.slds-cell-fixed {
+    /*background: #005570 !important;*/
+    background: #2aa58d !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+.slds-cell-fixed a {
+    color: #FFFFFF !important;
+}
+.forceCommunityRecordListDesktop .forceListViewManagerGrid table.resizable-cols {
+    /*background: #DFFFFF !important;*/
+    background: #F3FFFF !important;
+}
+.forceCommunityRecordListDesktop .forceListViewManagerGrid table.resizable-cols thead tr {
+    background: #B7E2F0 !important;
+    color: black;
+}
+.forceCommunityRecordListDesktop .forceListViewManagerGrid table.resizable-cols tr:nth-child(even) {
+    background: #f6f9f8 !important;
+}
+.forceCommunityRecordListDesktop .forceListViewManagerGrid table.resizable-cols tr:nth-child(odd) {
+    background: #ffffff !important;
+}
+.forceCommunityRecordListDesktop .forceListViewManagerGrid table.resizable-cols tr a {    
+    color: #333;
+}
+/* for material */
+.forceContentFileListDesktop .listViewContent table.resizable-cols thead tr th {
+    /*background: #005570 !important;*/
+    background: #2aa58d !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+.forceContentFileListDesktop .listViewContent table.resizable-cols thead tr th a {
+    color: #FFFFFF !important;
+}
+.forceContentFileListDesktop .listViewContent table.resizable-cols tbody tr:nth-child(even) th, .forceContentFileListDesktop .listViewContent table.resizable-cols tbody tr:nth-child(even) td {
+    background: #C1ECFA !important;
+}
+/* for report */
+.listViewContainer table.uiVirtualDataGrid tbody tr:nth-child(even) th, .listViewContainer table.uiVirtualDataGrid tbody tr:nth-child(even){
+    background: #f6f9f8 !important;
+}
+.listViewContainer table.uiVirtualDataGrid tbody tr:nth-child(even) td{
+    background: #f6f9f8 !important;
+}
+.listViewContainer table.uiVirtualDataGrid tbody tr:nth-child(odd) th, .listViewContainer table.uiVirtualDataGrid tbody tr:nth-child(odd){
+    background: #ffffff !important;
+}
+.listViewContainer table.uiVirtualDataGrid tbody tr a {    
+    color: #333;
+}
+.listViewContainer table.uiVirtualDataGrid thead tr th, .listViewContainer table.uiVirtualDataGrid thead tr td {
+    /*background: #005570 !important;*/
+    background: #2aa58d !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+.listViewContainer table.uiVirtualDataGrid thead tr th a, .listViewContainer table.uiVirtualDataGrid thead tr td a  {
+    color: #FFFFFF !important;
+}
+
+/* Data grid table style - ends */
+
+/* default navigation style changes - starts [MAR-29-2017] */
+.forceCommunityNavigationMenu .menuItemLink { 
+    display: table-cell !important;
+    /*height: 75px !important;*/
+    /*max-width: 10.37rem !important; */
+    text-align: center !important;
+    text-overflow: inherit !important;
+    white-space: normal !important;
+    vertical-align: middle !important;
+    /*width: 13.28em !important;*/		/*Anupam Changed*/
+}
+.forceCommunityNavigationMenu .menuItemLink:hover, .forceCommunityNavigationMenu .menuItemLink:focus, .forceCommunityNavigationMenu .menuItemLink.triggerLink:hover, .forceCommunityNavigationMenu .menuItemLink.triggerLink:focus, .forceCommunityNavigationMenu .menuItem.current .menuItemLink, .forceCommunityNavigationMenu .menuItem.current .menuItemLink.triggerLink {
+    color: #FFFFFF !important;
+    /*background-color: #7FCAEA !important;*/
+    background-color: #56a396 !important;
+}
+.forceCommunityNavigationMenu ul li {
+    border-left: 1px solid #9df0fe;  /*Anupam Changed*/
+}
+.forceCommunityNavigationMenu ul li:nth-child(2) {
+    border-left: 1px solid #2aa58d !important;  /*Anupam Changed*/
+}
+.forceCommunityNavigationMenu ul li:last-child {
+    border-right: 1px solid #9df0fe;  /*Anupam Changed*/
+}
+.forceCommunityNavigationMenu .navigationMenuNode+.navigationMenuNode {
+    margin-right: 0 !important;
+}
+
+.forceCommunityNavigationMenu .navigationMenu {
+   height: 30px !important;
+}
+
+/* default navigation style changes - ends */
+
+.MasRightBottomContainer {
+    border-left: 1px solid #ccc !important;
+    margin-left: 1em !important;
+    padding-left: 1.5em !important;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.img-responsive-footer {
+    display: block;
+    height: auto;
+    max-width: 80%;
+}
+
+.img-responsive-patient {
+    display: block;
+    height: auto;
+    max-width: 30%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.img-responsive-header {
+    display: block !important;
+    height: auto !important;
+    max-width: 100% !important;    
+    width: 50% !important;
+}
+.img-responsive-banner {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ============================== Patient Portal Management - Starts ============================== */
+
+/* patient banner management - starts */
+.home-banner-patient {
+    background-size: cover; 
+    background-position: center; 
+    /*height: 300px;*/
+    height: 271px;
+}
+.home-banner-patient-top {
+    height: 220px;
+}
+.patientBannerHead {
+    clear: both;
+    float: right;
+    font-size: 1.3em;
+    /*margin: 15px 15px 10px 0;*/ /*Anupam*/
+    margin: 38px 0px 18px 152px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 50%;
+}
+.patientBannerText {
+    clear: both;
+    float: right;
+    font-size: 1.0em;
+    /*margin: 0 0 10px 0;*/
+    margin: 0 15px 10px 0;
+    text-align: right;
+    width: 50%;
+}
+.patientBannerButton {
+    clear: both;
+    float: right;
+    font-size: 1.0em;
+    /*margin: 0 0 10px 0;*/
+    margin: 0 15px 10px 0;
+    width: 100%;
+}
+.patientBannerButton-buttonContainer {
+    float: right;
+    width: 15%;
+}
+.patientBannerButton-buttonContainer select {
+    background: #00bcb5 !important;
+    color: #FFFFFF !important;
+}
+.patientBannerButton-button  {
+	background: #00BCB5;
+	border-radius: 4px;
+	color: #fff;
+	float: left;
+	height: 37px;
+	line-height: 37px;
+	/*margin: 20px 0 0 30px;
+	padding: 0 45px; */   
+	margin-top: 7px;
+	padding: 0;
+    text-align: center;
+    text-decoration: none;
+	width: 100%;
+}
+.patientBannerButton-button a {
+	color: #fff;
+	text-decoration: none;    
+}
+.patientBannerBottom
+    height: 70px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+.patientBannerBottom img{
+    padding-top: 5px;
+}
+.patientBannerBottomContent {
+    color: #FFFFFF;
+    font-size: 1em;
+    text-align: right;
+}
+/* patient banner management - ends */
+
+.seperatorPatient {
+    clear: both;
+}
+.patientNotificationContainer {
+    border: 1px solid #E6E6E6;
+    color: #00BCB5;
+}
+.patientNotificationIconContainer {
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 7%;
+}
+.patientNotificationRightContainer {
+    padding: 10px;
+}
+.patient-panel-heading {
+    color: #00BCB5;
+    font-size: 1.3em !important;
+    font-weight: normal !important;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.CustomButtonPatient {
+    background: #005570;
+    color: #ffffff !important;
+}
+.CustomButtonPatient:hover {
+    background: #005570;
+    color: #ffffff !important;
+}
+.patientNotificationFooter {
+    float:right;
+}
+.panel-body-right-patient {
+	float: right;
+	height: 100%;
+	width: 45px;
+}
+.footer-icon {
+	float: left;
+	margin: 0;
+}
+.footer-mid-left-patient {
+    padding-bottom: 5px;
+    padding-top: 3px;
+    font-size:12px;
+}
+.footer-mid-left-top {
+    display: block;
+    /*padding-bottom: 10px;*/
+}
+.footer-mid-left-bottom {
+    /*display: block;*/
+    clear: both;
+    float: left;
+}
+
+.footer-mid-left-text-patient {
+	clear: both;
+	color: #6eb1ca;
+	float: left;
+}
+.footer-mid-left-text-patient a {
+	/* color: #6eb1ca; */
+	color: #ffffff;
+    /*color: #000;*/
+}
+.footer-bottom {
+	color: #bc7775;
+	/*font-size: .8em;*/
+	padding: 20px 0 35px 0;
+}
+.footerMiddleContainerPatient {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.footer-img-patient {
+    display: block;
+	float: right;
+    padding-top: 12px;
+}
+
+/* live chat button - starts */
+
+.cLiveAgentChatButton .sButton .laBtn  {
+	background: #FFCE00 !important;
+	border-radius: 4px !important;
+    border-color: transparent !important;
+    color: #005570 !important;
+	/*color: #fff !important;
+	float: left !important;*/
+	height: 37px !important;
+	line-height: 31px !important;
+	margin: 5px 0 0 0 !important;
+	padding: 0 !important;
+    text-decoration: none !important;
+	width: 65% !important;
+}
+
+/* live chat button - ends */
+
+/* ============================== Patient Portal Management - Ends ============================== */
+.forceCommunityOmniBox .no-assigned-image .default-bg-overlay {
+    background: none !important;
+}
+
+/* =============== default button color change = starts */
+.uiButton--brand {
+    background-color: #005570 !important;
+}
+
+/* =============== view profile sidebar off =============== */
+.sidebarCards {
+    display: none !important;
+}
+
+/* =============== service count alignment ============== */
+.reportsDataGrid .matrixReportTable td.aggregateDetails {
+    text-align: center !important;
+}
+.reportsDataGrid .matrixReportTable .totalColumn {
+    text-align: center !important;    
+}
+.reportsDataGrid .matrixReportTable td.subTotalRow {
+    text-align: center !important; 
+}
+.reportsDataGrid .matrixReportTable td.totalRow {
+    text-align: center !important; 
+}
+
+/* ============ Contact Us page modification =========== */
+/*
+.contactUsTheme .siteforceDesignTimeRegion {
+    background: rgb(234,245,251) !important;
+    font-size: 1em !important;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;    
+}
+*/
+.contactUsTheme .selfServiceCaseCreate .forceRecordLayout .mdp.forcePageBlockItemEdit .label {
+    font-weight: bold;
+}
+.contactUsThemeContainer {
+    background: rgb(234,245,251) !important;
+    border-bottom: 1px solid #005570;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;        
+}
+.contactUsThemeHead {
+    color: #005570 !important;
+    font-size: 1.2em !important;   
+}
+/*
+.contactUsTheme .slds-wrap {
+    background: url(https://abbvie--latamdev--c.cs30.visual.force.com/resource/1491403543000/ContactUsBg) bottom right no-repeat;    
+}
+*/
+.contactUsTheme .caseHeader {
+    display: none;
+}
+
+/* profile modifications */
+.forceCommunityUserSettings .row:nth-child(4), .forceCommunityUserSettings .row:nth-child(5) {
+    display: none !important;
+}
+
+/* forget password modifications */
+.cLoginFormDebarun a {
+    color: #000000 !important;
+}
+
+.featured-box-2 .uiInput--select.select:not([multiple]) {
+    /*background: #00bcb5 !important;
+    color: #FFFFFF !important;*/
+    font-size: 0.9em; /*added to increase font size */
+    padding-left: 0;
+    padding-right: 0;
+    border: none !important;
+}
+
+/* Added by Anupam during custom navigation menu creation */
+.forceCommunityRecordListDesktop.forceListViewManager
+{
+    max-width : none !important;
+}
+
+.forceCommunityAnalyticsObjectHome .sfaAnalyticsHome
+{
+    max-width : none !important;
+}
+/*  Anupam code end ---------------- */
+
+/* material page modifications */
+ul.slds-button-group li.slds-button {
+    border: 0 !important;
+}
+
+.slds-has-focus.slds-is-resizable .slds-th__action, .slds-has-focus.slds-is-resizable .slds-th__action:hover {
+    background-color: #005570;
+}
+
+.savecancelbuttoncontainer.hidecancelsavebutton.paddingcancelsave
+{
+	display:none;
+}
+.savecancelbuttoncontainer
+{
+	display:none !important;
+}
+.forceCommunityAnalyticsObjectHome .forceBaseListView tbody tr:nth-child(odd){
+    background-color:#ffffff;
+}
+.forceCommunityAnalyticsObjectHome .forceBaseListView tbody tr:nth-child(even){
+    background-color:#f6f9f8;
+}
+.forceCommunityRecordListDesktop .uiVirtualDataGrid--default tr a {    
+    color: #333;
+}
+.slds-table tbody tr:nth-child(even){
+    background-color:#f6f9f8;
+}
+
+@media only screen and (max-width: 767px), only screen and (max-width: 480px){
+   /* .loginFormSec{
+        margin-top:10px;
+    }*/
+    .physicianBannerContainer {
+    	background-size: cover !important;     
+	}
+    .selfServiceSearchWrapper.big-search-container{
+        top: 63px !important;
+    }
+    .header-top{
+        height:121px !important;
+    }
+}

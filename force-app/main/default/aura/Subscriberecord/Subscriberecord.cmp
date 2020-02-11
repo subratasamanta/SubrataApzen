@@ -1,0 +1,4 @@
+<aura:component implements="force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="SubscriberecordCtr" access="global" >
+	<aura:attribute name="recordId" type="String" />
+    <lightning:button label="Neutral" title="Neutral action" onclick="{! c.handleClick }"/>	
+</aura:component>

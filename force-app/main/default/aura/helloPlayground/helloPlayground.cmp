@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name="Accounts" type="Account" />
+    <p>Id:
+        <ui:outputText value="{!v.Accounts.Id}" />
+    </p>
+     
+    <p>Name:
+        <ui:outputText value="{!v.Accounts.Name}" />
+    </p>
+</aura:component>

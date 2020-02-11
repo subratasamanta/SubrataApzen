@@ -1,0 +1,72 @@
+<aura:component implements="force:appHostable,forceCommunity:availableForAllPageTypes" controller="ABVANZRegistration" access="global">
+    
+    
+    <ltng:require scripts="/resource/FullCalendar1/FullCalendar1/fullcalendar-3.1.0/jquery-2.2.4.js,/resource/FullCalendar1/FullCalendar1/fullcalendar-3.1.0/fullcalendar.js"  afterScriptsLoaded="{!c.afterScriptsLoaded}"/>
+    <ltng:require styles="/resource/FullCalendar1/FullCalendar1/fullcalendar-3.1.0/fullcalendar.css"/>
+    <ltng:require scripts="/resource/FullCalendar1/FullCalendar1/fullcalendar-3.1.0/common.js"/>
+    <aura:handler name="init" action="{!c.myAction}" value="{!this}" />
+    <aura:attribute name="PortalRec" type="contact" default="{'sobjectType' : 'contact'}" />
+    <aura:attribute name="Tasks" type="Object[]"/>
+    <aura:attribute name="events" type="Object[]"/>
+    <aura:attribute name="selecteddate" type="DateTime" access="GLOBAL"/>
+    <aura:attribute name="selecteddate1" type="DateTime" access="GLOBAL"/>
+    <aura:attribute name="selecteddate2" type="DateTime" access="GLOBAL"/>
+    
+    <aura:attribute name="selecteddatetit" type="DateTime" access="GLOBAL"/>
+    <aura:attribute name="selecteddatenj" type="DateTime" access="GLOBAL"/>
+    <aura:attribute name="selecteddatenjpeg" type="DateTime" access="GLOBAL"/>
+    
+    <aura:attribute name="abbviedrug" type="Boolean" default="false"/>
+    <aura:attribute name="abbvieeducation" type="Boolean" default="false"/>
+    <aura:attribute name="abbvienj" type="Boolean" default="false"/>
+    <aura:attribute name="abbviepeg" type="Boolean" default="false"/>
+    <aura:attribute name="contactname" type="string" default=""/>
+    <aura:attribute name="CheckBox1" type="Boolean" default="false"/>
+    <aura:attribute name="CheckBox2" type="Boolean" default="false"/>
+    <aura:attribute name="CheckBox3" type="Boolean" default="false"/>
+    <aura:attribute name="Visible1" type="Boolean" default="false"/>
+    <aura:attribute name="Visible2" type="Boolean" default="true"/>
+    <aura:attribute name="AbbvieReq1" type="Boolean" />
+    <aura:attribute name="Visible3" type="Boolean" default="true"/>
+    <aura:attribute name="parameter" type="string" default=""/>
+    <aura:attribute name="ErrorMessage" type="string" default=""/>
+    <aura:attribute name="Buttonpressedname" type="string" default=""/>
+    <aura:attribute name="TitrationButton" type="Boolean" default="true"/>
+    <aura:attribute name="NJButton" type="Boolean" default="false"/>
+    <aura:attribute name="NJPEGButton" type="Boolean" default="false"/>
+    <aura:attribute name="procedure" type="string"/>
+    <aura:registerEvent name="CalendarEvent" type="c:CalendarEvent"/>
+    <aura:registerEvent name="ABVANZSelectBtn" type="c:ABVANZSelectBtn"/>
+    <aura:registerEvent name="ABVANZAssistanceEvent" type="c:ABVANZAssistanceEvent"/>
+
+    <div class="main_content">
+        
+        
+        <div class="slds-grid slds-wrap">
+            <div class="slds-grid slds-wrap filters" >
+                <div class="filter_pad style=width: 200px">
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   
+   
+    
+   
+
+	<div class="slds-grid slds-wrap slds-small-size_12-of-12 padding-left-5">
+        <div id="calendar" style="display:block;" class="slds-small-size_12-of-12 slds-medium-size_8-of-12 slds-large-size_8-of-12"></div>
+        <div class="slds-grid slds-wrap slds-small-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12 rightInfoText" style="padding-left: 20px">
+                    <P>Greyed out dates indicate that your nearest Duodopa specialist is assisting another patient. The team will try meeting your need and might send a Duodopa specialist from another area or will contact you shortly to discuss available options.</P>
+        </div>
+    </div>    
+    <!--
+  <lightning:textarea name="myText" required="true" label="Privacy Text" 
+         messageWhenValueMissing="This field is required." disabled="true" value="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of e Finibus Bonorum et Malorum he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, orem ipsum dolor sit amet.. comes from a line in section 1.10.32." />
+ -->           
+    
+    
+    
+</aura:component>

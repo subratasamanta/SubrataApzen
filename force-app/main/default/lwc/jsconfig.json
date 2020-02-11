@@ -1,0 +1,62 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/customLookup": [
+                "customLookup/customLookup.js"
+            ],
+            "c/flexiPage1": [
+                "flexiPage1/flexiPage1.js"
+            ],
+            "c/hello": [
+                "hello/hello.js"
+            ],
+            "c/helloworld": [
+                "helloworld/helloworld.js"
+            ],
+            "c/leafletMap": [
+                "leafletMap/leafletMap.js"
+            ],
+            "c/lightningNavigation": [
+                "lightningNavigation/lightningNavigation.js"
+            ],
+            "c/objDetailsWizard": [
+                "objDetailsWizard/objDetailsWizard.js"
+            ],
+            "c/radiusSearchMap": [
+                "radiusSearchMap/radiusSearchMap.js"
+            ],
+            "c/recordList": [
+                "recordList/recordList.js"
+            ],
+            "c/searchByRadius": [
+                "searchByRadius/searchByRadius.js"
+            ],
+            "c/searchComponent": [
+                "searchComponent/searchComponent.js"
+            ],
+            "c/showParentChild": [
+                "showParentChild/showParentChild.js"
+            ],
+            "c/tabset1": [
+                "tabset1/tabset1.js"
+            ],
+            "c/test1": [
+                "test1/test1.js"
+            ],
+            "c/leaflet": [
+                "../staticresources/leaflet/leaflet.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

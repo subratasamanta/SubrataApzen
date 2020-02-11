@@ -1,0 +1,101 @@
+<aura:component implements="force:appHostable,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"  access="global">
+    <ltng:require scripts="/resource/jQuery3_1_1"/>
+    <ltng:require styles="/resource/ABVANZfontAwesomeMin"/>
+    <aura:attribute name="title" type="String[]" default=""/>
+    <aura:attribute name="selectedtitle" type="String" default=""/>
+    <aura:attribute name="fnmae" type="String" required="true" default=""/>
+    <aura:attribute name="lname" type="String" required="true" default=""/>
+    <aura:attribute name="emailaddress" type="String" required="true" default=""/>
+    <aura:attribute name="ahpracode" type="String" required="true" default=""/>
+    <aura:attribute name="postalCode" type="String" required="true" default=""/>
+    <style>
+            .rightArrow{
+            	background-image:url({!$Resource.ABVANZrightArrow});
+        		width: 19px;
+                height: 31px;
+                float: right;
+                margin-left: -2px;
+                margin-top: -1px;
+                border-top-right-radius: 9px;
+                border-bottom-right-radius: 6px;
+                background-repeat: no-repeat;
+                background-color: #005570;
+            }
+            input::input-placeholder {
+        		color:#b6bbba !important
+                font-size:14px !important;
+            }
+        
+    </style>
+
+    <div aura:id="body">
+        <div class="slds-binery slds-wrap contentWrap slds-large-size_12-of-12">
+        	<div class="slds-grid slds-wrap slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                <!--<div class="slds-small-size_12-of-12 slds-medium-size_1-of-4 slds-large-size_1-of-12 sectionHeader"></div>-->
+                <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 sectionHeaderText">
+                    Register
+               		<a class="loginLink" href="..">Login</a>
+                </div>
+                <!--<div class="slds-small-size_12-of-12 slds-medium-size_1-of-4 slds-large-size_3-of-12"></div>-->
+            </div>
+        <div class="slds-grid displayBlock-small">
+                <div class="slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 inputWrap">
+                    <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                        <div class="slds-text-align_left slds-m-around_x-small">
+                            <ui:inputSelect aura:id="titleId" class="slds-input" labelClass="slds-form-element__label" value="{!v.selectedtitle}" change="{!c.titleChanged}">
+                                <aura:iteration items="{!v.Title}" var="s"> 
+                                    <ui:inputSelectOption text="{!s}"/> 
+                                </aura:iteration>            
+                            </ui:inputSelect>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 divBorder">
+                        <div class="slds-text-align_left slds-m-around_x-small">
+                            <ui:inputtext class="slds-input" aura:id="fnameId"  value="{!v.fnmae}" placeholder="First Name" change="{!c.checkErrors}" required="true"/>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 divBorder">
+                        <div class="slds-text-align_left slds-m-around_x-small">
+                            <ui:inputtext class="slds-input" aura:id="lnameId" value="{!v.lname}" placeholder="Last Name" change="{!c.checkErrors}" required="true"/>
+                        </div>
+                    </div>
+                    <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 divBorder">
+                        <div class="slds-text-align-left slds-m-around_x-small">
+                            <ui:inputemail class="slds-input" aura:id="emailId" value="{!v.emailaddress}" placeholder="Email" change="{!c.validateEmail}" required="true"/>
+                        </div> 
+                    </div>
+                    <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 divBorder">
+                        <div class="slds-text-align_left slds-m-around_x-small">
+                            <ui:inputtext class="slds-input" aura:id="AHPRACodeID" required="true" value="{!v.ahpracode}" placeholder="APHRA Code"/>
+                        </div>
+                    </div>
+                    <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 divBorder">
+                        <div class="slds-text-align_left slds-m-around_x-small">
+                            <ui:inputtext class="slds-input" aura:id="pcodeId"  value="{!v.postalCode}" placeholder="Postal Code" maxlength="4" change="{!c.checkCodeErrors}" required="true"/>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 divBorder" style="margin-bottom: 15px;margin-top:15px;">
+
+                    </div>
+                    <hr style="margin-bottom: 15px;margin-top:15px;"></hr>
+                    <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 divBorder">
+                        <div class="slds-button__icon_right nextBtn-lg slds-size_1-of-2">
+                            <lightning:button variant="brand" label="Next" onclick="{!c.nextStep}" />
+                            <!--<div class="rightArrow"></div>-->
+                        </div>    
+                    </div>    
+                </div>
+                <div class="slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 infoText overflow-sm">
+                    Please fill out this form to register. The site will check if you are already registered with one of our other Treating Specialist sites for easy access.
+                    <div class="slds-button__icon_right nextBtn-sm">
+                        <lightning:button variant="brand" label="Next" onclick="{!c.nextStep}" />
+                        <!--<div class="rightArrow"></div>-->
+                    </div>
+                </div>
+            </div>
+          </div>  
+    </div>
+</aura:component>

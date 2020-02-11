@@ -1,0 +1,60 @@
+<template>    
+    <br></br>
+    <!--<div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-12">
+            <lightning-button-icon icon-name="utility:dash"   alternative-text="Minus"  class="slds-m-left_xx-small" style="color: black;" onclick={pressMinus}></lightning-button-icon>
+        </div>   
+        <div class="slds-col slds-size_10-of-12">
+            <lightning-progress-bar value={progress} size="medium"></lightning-progress-bar>
+        </div> 
+        <div class="slds-col slds-size_1-of-12">
+            <lightning-button-icon icon-name="utility:add"    alternative-text="add"  class="slds-m-left_xx-small" style="color: black;" onclick={pressPlus}></lightning-button-icon>
+        </div>
+    </div>    
+    <br></br>-->
+    <div class="slds-box">
+    <lightning-card  title="Search nearby">    
+        <div>
+            <lightning-progress-indicator current-step={currentlySelected} type="base" variant="base">
+                <lightning-progress-step label="10 KM" value="10" onclick={currentRadiusSelected}></lightning-progress-step>
+                <lightning-progress-step label="20 KM" value="20" onclick={currentRadiusSelected}></lightning-progress-step>
+                <lightning-progress-step label="30 KM" value="30" onclick={currentRadiusSelected}></lightning-progress-step>
+                <lightning-progress-step label="50 KM" value="50" onclick={currentRadiusSelected}></lightning-progress-step>
+                <lightning-progress-step label="100 KM" value="100" onclick={currentRadiusSelected}></lightning-progress-step>
+                <lightning-progress-step label="Current State" value="State" onclick={currentStepclicked6}></lightning-progress-step>
+                <lightning-progress-step label="Current Country" value="Country" onclick={currentStepclicked7}></lightning-progress-step>
+            </lightning-progress-indicator>
+        </div>
+    </lightning-card>
+    </div>
+    <br></br>
+    <div class="slds-box">
+    <lightning-card  title="State and Zip Search"> 
+        State:
+        <select class="slds-select" id="select-01" onchange={handleStateChange}>
+            <option value="">---None---</option>
+            <!--iterate all picklist values from wrapper list using for:each loop-->
+            <template for:each={statevals} for:item="picklistItem">
+                <option key={picklistItem} value={picklistItem}>
+                {picklistItem}
+                </option>
+            </template>
+        </select>
+        <br></br>
+        Zipcode:
+        <select class="slds-select" id="select-02" onchange={handlePinChange} >
+            <option value="">---None---</option>
+            <!--iterate all picklist values from wrapper list using for:each loop-->
+            <template for:each={pincodevals} for:item="picklistItem">
+            <option key={picklistItem} value={picklistItem}>
+                {picklistItem}
+            </option>
+                </template>
+        </select> 
+    </lightning-card>  
+</div>
+    <br></br>
+    <div>
+        <lightning-map map-markers={mapMarkers}  markers-title={mapMarkers}></lightning-map>
+    </div>    
+</template>
