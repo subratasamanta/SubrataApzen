@@ -6,7 +6,6 @@ import getAccountryByZipcode from '@salesforce/apex/AccountLocation.getAccountry
  
 export default class RadiusSearchMap extends LightningElement {
     @track mapMarkers =[];
-    //@track progress = 10;
     @track currentlySelected ='10';
     @track statevals;
     @track selectedState;
